@@ -17,6 +17,8 @@ html, body {
 body {
   min-height: 100%;
   background: white;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 header {
   height: 100px;
@@ -80,19 +82,32 @@ aside {
   width: 80%;
   height: 10%;
   margin: 0 auto;
-  display: block
+  display: block;
 }
 .storm:hover {
   opacity: 0.7;
 }
 #work {
-  margin: 20px auto;
+  margin-left: 20px auto;
+  margin-right: 20px auto;
   height: 100%;
+  width: 100%;
   background-color: black;
   text-align: center;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
+
 .placeholders {
   width: 500px;
   height: 400px;
   margin:0 auto;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-left: 0%;
+    padding-right: 0%;s
+  }
 }
