@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+
+  padding: 0;
+
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+body {
+  min-height: 100%;
+  background: white;
+}
+header {
+  height: 100px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-bottom: 3px solid black;
+  box-sizing: border-box;
+}
+nav {
+  height: 100%;
+  display: block;
+}
+ul{
+  height: 100%;
+  margin: 15px 0 0 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  float: right;
+}
+ul li {
+  margin: 10px;
+  padding-right: 15px;
+  display: inline-block;
+  float: left;
+  border-right: 2px solid black;
+  font-family: 'Fjalla One', sans-serif;
+}
+li a {
+  color: black;
+  text-decoration: none;
+}
+li a:hover {
+  padding: 15px;
+  background: yellow;
+}
+#about {
+  height: 100%;
+  margin: 10px 0;
+
+}
+section {
+  width: 60%;
+  padding: 10px;
+  border-right: 2px solid yellow;
+  float:left;
+  box-sizing: border-box;
+}
+p {
+  font-family: 'PT Serif', serif;
+}
+h1 {
+  margin-top: 0;
+}
+aside {
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.storm {
+  width: 80%;
+  height: 10%;
+  margin: 0 auto;
+  display: block
+}
+.storm:hover {
+  opacity: 0.7;
+}
+#work {
+  margin: 20px auto;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+}
+.placeholders {
+  width: 500px;
+  height: 400px;
+  margin:0 auto;
+}
