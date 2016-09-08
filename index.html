@@ -3,21 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Rasheeda A.'s Portfolio</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+<!--   <link rel="stylesheet" href="css/normalize.css">
+ -->  <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Fjalla+One|PT+Serif' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+ <div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">
+            <img class="menu-logo" src="https://github.com/mrnelley/HiddenGems/blob/master/Planning/logo%20white-01.png?raw=true">               </a>
+          </li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+        <li>
+          <a data-toggle="modal" data-target="#myModal" href="#" class="team">Team</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Item<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-header">Menu Item</li>
+            <li><a href="#places">Menu Item</a></li>
+          </ul>
+        </li>
+          </ul>
+</nav>
+
+<!-- Page Content -->
+<div id="page-content-wrapper">
+  <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+    <span class="hamb-top"></span>
+    <span class="hamb-middle"></span>
+    <span class="hamb-bottom"></span>
+  </button>
+</div>
+
 <div class="jumbotron">
 <div class="container">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+<h1 id="header-text">Hello World</h1>
 </div>
 </div>
-<div class="container">
 
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+  <img class="storm" src="img/storm.jpg">
+</div>
+<div class="col-md-4">
+    <img class="storm" src="img/storm.jpg">
+</div>
+<div class="col-md-4">
+    <img class="storm" src="img/storm.jpg">
+</div>
+</div>
 </div>
 
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
