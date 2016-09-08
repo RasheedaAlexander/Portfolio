@@ -7,6 +7,7 @@
  -->  <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Fjalla+One|PT+Serif' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
  <div id="wrapper">
@@ -16,55 +17,58 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
       <ul class="nav sidebar-nav">
         <li class="sidebar-brand">
-          <a href="#">
-            <img class="menu-logo" src="https://github.com/mrnelley/HiddenGems/blob/master/Planning/logo%20white-01.png?raw=true">               </a>
+        <h1>Rasheeda Alexander</h1>
+          <!-- <a href="#">
+            <img class="menu-logo" src="https://pixabay.com/static/uploads/photo/2012/05/02/18/58/peacock-46006_960_720.png">               </a> -->
           </li>
           <li>
-            <a href="#">Home</a>
+            <a href="#jumbotron">Home</a>
           </li>
         <li>
-          <a data-toggle="modal" data-target="#myModal" href="#" class="team">Team</a>
+          <a href="#portfolio">Portfolio</a>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Item<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li class="dropdown-header">Menu Item</li>
-            <li><a href="#places">Menu Item</a></li>
+            <li class="dropdown-header">Find Me On:</li>
+            <li><a href="#" class="btn btn-lg btn-social btn-github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="btn btn-lg btn-social btn-linkedin"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="btn btn-lg btn-social btn-envelope"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
           </ul>
         </li>
           </ul>
 </nav>
 
 <!-- Page Content -->
-<div id="page-content-wrapper">
   <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
     <span class="hamb-top"></span>
     <span class="hamb-middle"></span>
     <span class="hamb-bottom"></span>
   </button>
-</div>
 
-<div class="jumbotron">
-<div class="container">
+<div class="jumbotron" id="jumbotron">
+<div class="container" id="teal">
 <h1 id="header-text">Hello World</h1>
 </div>
 </div>
 
-<div class="container">
+<div class="container" id="portfolio">
 <div class="row">
-<div class="col-md-4">
+<div class="col-md-4 projects">
   <img class="storm" src="img/storm.jpg">
 </div>
-<div class="col-md-4">
+<div class="col-md-4 projects">
     <img class="storm" src="img/storm.jpg">
 </div>
-<div class="col-md-4">
+<div class="col-md-4 projects">
     <img class="storm" src="img/storm.jpg">
 </div>
 </div>
 </div>
 
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
   <!-- <header id="#home">
     <nav>
