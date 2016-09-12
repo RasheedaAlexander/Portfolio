@@ -8,18 +8,9 @@
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One|PT+Serif' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
-<base href="/Users/SheedaBeeda/Desktop/rasheedaalexander.github.io/" />
-<script src="js/app.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-  <div id="wrapper" ng-app="portfolio">
+  <div id="wrapper">
     <div class="overlay"></div>
 
     <!-- Sidebar -->
@@ -34,45 +25,111 @@
           <a href="#jumbotron">Home</a>
         </li>
         <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
           <a href="#portfolio">Portfolio</a>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li class="dropdown-header">Find Me On:</li>
-            <li><a href="#" class="btn btn-lg btn-social btn-github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-            <li><a href="#" class="btn btn-lg btn-social btn-linkedin"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
-            <li><a href="#" class="btn btn-lg btn-social btn-envelope"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+          <!-- <ul class="dropdown-menu" role="menu">
+          <li class="dropdown-header">Contact</li>
+        </ul> -->
+      </li>
+    </ul>
+  </nav>
 
-    <!-- Page Content -->
-    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-      <span class="hamb-top"></span>
-      <span class="hamb-middle"></span>
-      <span class="hamb-bottom"></span>
-    </button>
+  <!-- Page Content -->
+  <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+    <span class="hamb-top"></span>
+    <span class="hamb-middle"></span>
+    <span class="hamb-bottom"></span>
+  </button>
 
-    <div class="jumbotron" id="jumbotron">
-      <div class="container" id="teal">
-        <h1 id="header-text">Hello World</h1>
+  <div class="jumbotron" id="jumbotron">
+    <div class="container" id="teal">
+      <h1 id="header-text">Rasheeda Alexander<br>
+        <hr>
+        <small>Full Stack Developer</small></h1>
+
+        <a href="https://github.com/RasheedaAlexander" class="btn btn-lg btn-social btn-github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+
+        <a href="https://www.linkedin.com/in/rasheedaalexander" class="btn btn-lg btn-social btn-linkedin"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+
+        <a href="#" class="btn btn-lg btn-social btn-envelope"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a><
+      </div>
+    </div>
+
+    <div class="container" id="about">
+      <div class="row fit" id="fit-about">
+        <div class="col-md-8" id="about-txt">
+          <h1>About Heading</h1>
+          <p> As a full-stack developer, my main focus is to offer insightful ways to build a digital presence. I enjoy leveraging my love of learning to help people show their value.</p>
+        </div>
+        <div class="col-md-4" id="other">
+          <img src="img/ProfilePic.jpg" id="profile-pic" alt="profile picture">
+        </div>
       </div>
     </div>
 
     <div class="container" id="portfolio">
-      <div class="row">
-        <div class="col-md-4 projects">
-          <img class="storm" src="img/storm.jpg">
+      <div class="row" id="fit-portfolio">
+
+        <div class="col-md-4 categorywrapper">
+          <div class="views-row views-row-1 views-row-odd views-row-first">
+
+            <div class="term-desc">
+              <h3>Title</h3>
+              <hr>
+              <p>This is Arts &amp; Culture</p>
+              <button type="button" class="btn btn-default">Default</button>
+
+            </div>
+            <div class="term-image"> <a href="#"><img src="img/wocintech1.jpg" /></a>
+
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 projects">
-          <img class="storm" src="img/storm.jpg">
+
+        <div class="col-md-4 categorywrapper">
+          <div class="views-row views-row-1 views-row-odd views-row-first">
+
+            <div class="term-desc">
+              <h3>Title</h3>
+                <hr>
+              <p>This is Arts &amp; Culture</p>
+              <button type="button" class="btn btn-default">Default</button>
+
+            </div>
+            <div class="term-image"> <a href="#"><img src="img/wocintech1.jpg" /></a>
+
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 projects">
-          <img class="storm" src="img/storm.jpg">
+
+        <div class="col-md-4 categorywrapper">
+          <div class="views-row views-row-1 views-row-odd views-row-first">
+
+            <div class="term-desc">
+              <h3>Title</h3>
+                <hr>
+              <p>This is Arts &amp; Culture</p>
+              <button type="button" class="btn btn-default">Default</button>
+
+            </div>
+            <div class="term-image"> <a href="#"><img src="img/wocintech1.jpg" /></a>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/effects.js"></script>
   </body>
   </html>
