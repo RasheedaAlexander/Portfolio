@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var body = $('#body');
+  $(window).scrollTop(0);
   //Show/Hide about div while scrolling
   $(window).scroll(function() {
 
