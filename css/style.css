@@ -177,7 +177,7 @@ html {
     box-shadow: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 766px) {
   .sidebar-brand{
     color: white;
   }
@@ -193,8 +193,12 @@ html {
     z-index: 0;
   }
   a {
-    color: white;
+    font-size: 20px;
+    font-weight: bold;
   }
+}
+a {
+  color: white;
 }
 /*-------------------------------*/
 /*       Hamburger-Cross         */
@@ -425,7 +429,8 @@ li {
     text-align: center;
   }
   p{
-    font-size: 20px;
+    font-size: 26px;
+    font-weight: 400;
   }
   #icons{
     padding: 20px;
