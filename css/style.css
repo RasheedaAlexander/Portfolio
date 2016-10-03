@@ -1,6 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Oswald";
-
-
 body {
   padding-bottom: 30px;
   position: relative;
@@ -24,6 +21,11 @@ html {
 /*-------------------------------*/
 /*           Wrappers            */
 /*-------------------------------*/
+@media (max-width: 766px) {
+  #wrapper {
+    max-width: 767px;
+  }
+}
 @media (min-width: 767px) {
   #wrapper {
     padding-left: 0;
@@ -533,7 +535,7 @@ li {
   }
   @media (max-width: 600px) {
     .categorywrapper .views-row:hover .term-desc {
-      z-index:-1;
+      z-index:0;
     }
   }
   .categorywrapper .views-row .term-image a {
