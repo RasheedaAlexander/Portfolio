@@ -12,5 +12,4 @@ $(document).ready(function(){
       $('#about-txt').fadeOut("slow");
     }
   });
-
 })
