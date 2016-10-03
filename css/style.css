@@ -1,4 +1,3 @@
-@import "bootstrap-social.less";
 @import "https://fonts.googleapis.com/css?family=Oswald";
 
 
@@ -280,9 +279,9 @@ a {
   }
 }
 @media (max-width: 766px) {
-.hamburger {
-  display: none;
-}
+  .hamburger {
+    display: none;
+  }
 }
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-middle,
@@ -532,7 +531,11 @@ li {
   .categorywrapper .views-row:hover .term-desc {
     z-index:2;
   }
-
+  @media (max-width: 600px) {
+    .categorywrapper .views-row:hover .term-desc {
+      z-index:-1;
+    }
+  }
   .categorywrapper .views-row .term-image a {
     display:inline-block;
     width: 100%;
