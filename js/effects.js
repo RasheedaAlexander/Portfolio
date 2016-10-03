@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $(window).scrollTop(0);
-  //Show/Hide about div while scrolling
+  // Show/Hide about div while scrolling
   $(window).scroll(function() {
 
     if ($(this).scrollTop()>0)
@@ -12,4 +12,5 @@ $(document).ready(function(){
       $('#about-txt').fadeOut("slow");
     }
   });
+
 })
