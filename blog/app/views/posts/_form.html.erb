@@ -11,18 +11,27 @@ if plural will say errors -->
   <% end %>
 </ul>
 <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
 
-<%= f.label :title %>
-<br>
-<%= f.text_field :title %>
-<br>
-<br>
+    <h2><%= f.label 'Image URL' %></h2>
+    <%= f.text_field :img %>
+    <br>
+    <br>
+    <h2><%= f.label :title %></h2>
+    <%= f.text_field :title %>
+    <br>
+    <br>
 
-<%= f.label :content %>
-<br>
-<%= f.text_area :content %>
-<br>
-<br>
+    <h2><%= f.label :content %></h2>
+    <%= f.text_area :content %>
+    <br>
+    <br>
 
-<%= f.submit %>
+    <%= f.submit %>
+
+    </div>
+  </div>
+</div>
 <% end %>

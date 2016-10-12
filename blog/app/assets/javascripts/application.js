@@ -11,6 +11,22 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  // var col = $('.col-md-4');
+  $('.col-md-4:even').addClass('outer');
+  $('.col-md-4:odd').addClass('inner');
+
+
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('navbar').addClass('shrink');
+    } else {
+      $('navbar').removeClass('shrink');
+    }
+  });
+});
