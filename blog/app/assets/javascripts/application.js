@@ -17,6 +17,7 @@
 //= require_tree .
 
 $(document).ready(function(){
+  console.log("Blog is working");
   // var col = $('.col-md-4');
   $('.col-md-4:even').addClass('outer');
   $('.col-md-4:odd').addClass('inner');
