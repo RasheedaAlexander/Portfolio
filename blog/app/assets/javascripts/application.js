@@ -30,4 +30,6 @@ $(document).ready(function(){
       $('navbar').removeClass('shrink');
     }
   });
+
+  // Display 5 recent posts
 });
