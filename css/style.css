@@ -468,19 +468,20 @@ li {
     width: 100%;
     padding: 0;
     margin: 0;
+    background-color: #009b87;
   }
   #fit-portfolio, #fit-portfolio2 {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  .col-md-6 {
+  /*.col-md-6 {
     padding: 0 !important;
-  }
-  /*.col-md-4 {
+  }*/
+.col-md-4 {
   padding-left: 0 !important;
   padding-right: 0 !important;
-  }*/
+  }
   .col-md-4 .categorywrapper {
     clear:both;
     position: relative;
