@@ -1,237 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" ><head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
-  <title>Rasheeda A.'s Portfolio</title>
-  <!--   <link rel="stylesheet" href="css/normalize.css"> -->
-  <link href='https://fonts.googleapis.com/css?family=Fjalla+One|PT+Serif' rel='stylesheet'>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Rasheeda's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Major+Mono+Display|Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 </head>
 <body>
-  <div id="wrapper">
-    <div class="overlay"></div>
+  <div class="container">
+  <div class="nav">
+<div class="home">
+  <a href="">Home</a>
+  </div>
+  <div class="about">
+    <a href="">About</a>
+  </div>
+  <div class="portfolio">
+    <a href="">Portfolio</a>
+  </div>
+  <div class="blog">
+    <a href="">Blog</a>
+  </div>
+  <div class="contact">
+    <a href="">Contact</a>
+  </div>
+  </div>
 
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-      <ul class="nav sidebar-nav">
-        <li class="sidebar-brand">
-          <h1>Rasheeda Alexander</h1>
-          <!-- <a href="#">
-          <img class="menu-logo" src="https://pixabay.com/static/uploads/photo/2012/05/02/18/58/peacock-46006_960_720.png">               </a> -->
-        </li>
-        <li>
-          <a href="#jumbotron">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="http://codegirlco.herokuapp.com/">Blog</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="name">
+  <h1>Rasheeda Alexander</h1>
+  <h3>Front-End Developer</h3>
+  </div>
+</div>
 
-    <!-- Page Content -->
-    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-      <span class="hamb-top"></span>
-      <span class="hamb-middle"></span>
-      <span class="hamb-bottom"></span>
-    </button>
+<div class="container2">
+  <div class="example-number">
+    <p id="about-me">
+      As a frontend developer, my main focus is to offer insightful ways to build a digital presence. <br>
+      I enjoy leveraging my love of learning to help people show their value. <br>
+      Helping others help themselves brings me fulfillment.
+</p>
+  </div>
+</div>
 
-    <div class="jumbotron" id="jumbotron">
-      <div class="container" id="teal">
-        <div class="row">
-          <div class="col-lg-12">
-            <img src="img/ProfilePic.jpg" id="profile-pic" alt="profile picture">
-            <h1 id="header-text">Rasheeda Alexander<br>
-              <hr>
-              <small>Full Stack Developer</small></h1>
+<div class="container3">
+  <div class="project">
+    <a href="https://github.com/RasheedaAlexander/Simon"><img src="https://i.gyazo.com/2153f59c83780cf1dc402d2c63ec7d62.gif" />
+    <div class="caption">
+      <p>Enjoy the classic game of Simon Says.</p>
+    </div>
+    </a>
+  </div>
 
-              <a href="https://github.com/RasheedaAlexander" class="btn btn-lg btn-social btn-github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+  <div class="project">
+    <a href="https://github.com/RasheedaAlexander/jam" target="_blank"><img src="https://i.gyazo.com/67e6dfa1b524416a6287ba505ef3fc95.gif" alt="Jam App">
+    <div class="caption">
+      <p>Access the world of music via Spotify with a simple search!</p>
+    </div>
+    </a>
+  </div>
 
-              <a href="https://profiles.generalassemb.ly/profiles/rasheeda-alexander"><img class="ga" src="https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/2720/GA_Logo.png" alt="General Assembly Logo" style="width: 80px; height: 80px;"></a>
-
-              <a href="https://www.linkedin.com/in/rasheedaalexander" class="btn btn-lg btn-social btn-linkedin"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
+  <div class="project">
+    <a href="https://github.com/RasheedaAlexander/hiddngems_angular"><img src="https://i.gyazo.com/2c9cfe68a2c49bd96e5a931ba45f98af.gif" />
+      <div class="caption">
+        <p>An app using the Google Maps API for tourists in DC who are looking to experience the city like a local</p>
       </div>
+    </a>
+  </div>
 
-      <div class="container" id="about">
-        <div class="row fit" id="fit-about">
-          <div class="col-md-12" id="about-txt">
-            <h1>Get To Know Me</h1>
-            <p>As a full-stack developer, my main focus is to offer insightful ways to build a digital presence. I enjoy leveraging my love of learning to help people show their value. Helping others help themselves brings me fulfillment.</p>
-            <p>I have extensive experience in WordPress, Joomla and Microsoft SharePoint and am highly proficient in the following programming languages and editing platforms:
-            </p>
-            <div class="col-md-12" id="icons">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-sass-original colored"></i>
-              <i class="devicon-bootstrap-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-jquery-plain colored"></i>
-              <i class="devicon-mongodb-plain-wordmark"></i>
-              <i class="devicon-angularjs-plain colored"></i>
-              <i class="devicon-react-original-wordmark"></i>
-              <i class="devicon-nodejs-plain-wordmark colored"></i>
-              <i class="devicon-ruby-plain-wordmark colored"></i>
-              <i class="devicon-rails-plain-wordmark colored"></i>
-              <i class="devicon-postgresql-plain-wordmark colored"></i>
-              <i class="devicon-git-plain-wordmark colored"></i>
-              <i class="devicon-github-plain colored"></i>
-              <i class="devicon-heroku-line-wordmark"></i>
-              <i class="devicon-photoshop-line"></i>
-              <i class="devicon-illustrator-line colored"></i>
-              <i class="devicon-wordpress-plain-wordmark colored"></i>
-            </div>
-            <br>
-            <p>
-              Connect With Me Today To learn more about how a professionally developed website can help your business reach more customers, more effectively.</p>
-            </div>
-            <!-- <div class="col-md-4" id="other">
-            <img src="img/ProfilePic.jpg" id="profile-pic" alt="profile picture">
-          </div> -->
-        </div>
-      </div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+</div>
 
-      <div class="container" id="portfolio">
-        <div class="row" id="fit-portfolio">
-
-          <div class="col-md-4 categorywrapper">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-
-              <div class="term-desc">
-                <h3>Simon</h3>
-                <hr>
-                <p>Enjoy the classic game of Simon Says. Built with JQuery</p>
-                <button class="btn btn-default">Learn More</button>
-              </div>
-
-              <div class="term-image"> <a href="https://github.com/RasheedaAlexander/Simon"><img src="https://i.gyazo.com/2153f59c83780cf1dc402d2c63ec7d62.gif" /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 categorywrapper">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-
-              <div class="term-desc">
-                <h3>Jam</h3>
-                <hr>
-                <p>Access the world of music via Spotify with a simple search! Built in Angular2</p>
-                <button class="btn btn-default">Learn More</button>
-              </div>
-
-              <div class="term-image"><a href="https://github.com/RasheedaAlexander/jam" target="_blank"><img src="https://i.gyazo.com/67e6dfa1b524416a6287ba505ef3fc95.gif" alt="Jam App"></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 categorywrapper">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-
-              <div class="term-desc">
-                <h3>Destination Wedding</h3>
-                <hr>
-                <p>A Destination Wedding application that allows users (brides)to keep track of resorts, vendors, and more!
-                  Built with Ruby on Rails</p>
-                  <button type="button" class="btn btn-default">Learn More</button>
-                </div>
-
-                <div class="term-image"> <a href="https://github.com/RasheedaAlexander/wedding"><img src="https://i.gyazo.com/2b6b4fc544a7675a9719b49a7ecbe438.gif" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row" id="fit-portfolio2">
-
-            <div class="col-md-4 categorywrapper">
-              <div class="views-row views-row-1 views-row-odd views-row-first">
-
-                <div class="term-desc">
-                  <h3>Hidd'n Gems</h3>
-                  <hr>
-                  <p>An app using the Google Maps API for tourists in DC who are looking to experience the city like a local. </p>
-                  <button type="button" class="btn btn-default">Learn More</button>
-                </div>
-
-                <div class="term-image"> <a href="https://github.com/RasheedaAlexander/hiddngems_angular"><img src="https://i.gyazo.com/2c9cfe68a2c49bd96e5a931ba45f98af.gif" /></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 categorywrapper">
-              <div class="views-row views-row-1 views-row-odd views-row-first">
-
-                <div class="term-desc">
-                  <h3>FLOTUS</h3>
-                  <hr>
-                  <p>A bootstrap page with a sign up form to pledge a contribution for Michelle Obama's campaign to run for president in 2020. Based on a Photoshop mockup template</p>
-                  <button type="button" class="btn btn-default">Learn More</button>
-                </div>
-
-                <div class="term-image"> <a href="https://github.com/RasheedaAlexander/flotus"><img src="https://i.gyazo.com/1c27c559b960a4ae450055c311dc8a92.gif" /></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 categorywrapper">
-              <div class="views-row views-row-1 views-row-odd views-row-first">
-
-                <div class="term-desc">
-                  <h3>Pokenatra</h3>
-                  <hr>
-                  <p>This is a single model application on Sinatra that allows for the CRUD of a Pokemon</p>
-                  <button type="button" class="btn btn-default">Learn More</button>
-                </div>
-
-                <div class="term-image"> <a href="https://github.com/RasheedaAlexander/pokenatra"><img src="https://i.gyazo.com/9f0a7147949f5838205b1d4a7fb44253.gif" /></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="row" id="fit-portfolio3">
-            <div class="col-md-4 categorywrapper col-md-offset-4 ">
-              <div class="views-row views-row-1 views-row-odd views-row-first">
-
-                <div class="term-desc">
-                  <h3>Living in Color TV</h3>
-                  <hr>
-                  <p>Custom WordPress for health & wellness blog. Includes social media links and an email subscription service</p>
-                  <button type="button" class="btn btn-default">Learn More</button>
-                </div>
-
-                <div class="term-image"> <a href="http://livingincolortv.com/"><img src="https://i.gyazo.com/05486f15c7abd159227566ebb659fff0.gif" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- END PORTFOLIO -->
-        </div>
-
-
-        <!--
-        2nd ROW OF 6 PROJECT PORTFOLIO
-
-      -->
-
-      <div class="container" id="contact-form">
-        <form id="contact" action="https://formspree.io/rasheedaalexa@gmail.com" method="POST">
+<div class="container4">
+  <form id="contact" action="https://formspree.io/rasheedaalexa@gmail.com" method="POST">
           <h3> Keep In Touch </h3>
 
           <input name="_replyto" placeholder="Your Email Address" type="email" />
@@ -244,15 +91,10 @@
           <textarea name="message" placeholder="Type your message here...."></textarea>
           <button type="submit" id="contact-submit">Send</button>
 
-          <button type="reset">Reset</button>
+          <!-- <button type="reset">Reset</button> -->
         </form>
       </div>
-
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
-      <script src="js/effects.js"></script>
-      <script src-"js/analytics.js"></script>
-    </body>
-    </html>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
