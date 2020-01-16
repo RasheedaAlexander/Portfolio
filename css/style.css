@@ -1,48 +1,90 @@
-@media print, screen and (max-width: 640px) {
-  .example-number {
-    /* height: 160px;
-    width: 160px; */
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .container2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .container {}
+
+  .container2 {}
+
+  .container3 {
+    grid-template-rows: 1fr;
+    /* grid-template-columns: 1fr; */
   }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .container {}
+
+  .container2 {}
+
+  .container3 {}
+
+  .project {
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {}
+
+  .container2 {}
+
+  .container3 {}
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 100%;
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-areas:
+    "container"
+    "container2"
+    "container3";
   background-color: #0e2540;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .container {
   background: linear-gradient(rgba(15, 38, 64, 0.95), rgba(15, 38, 64, .8)), url(../img/wocintech2.jpg);
   /* background: #0e2540; */
-  height: 460px;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  height: 600px;
   background-size: cover;
   display: grid;
 }
 
-.nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  /* grid-area: 1 / 2 / 2 / 5; */
+#navbar {
+  padding: 20px;
+  grid-area: 2/1/3/2;
   font-weight: 600;
   text-decoration: none;
+  line-height: 1em;
 }
 
-.nav li {
+#navbar li {
   list-style-type: none;
 }
 
 .name {
   /* padding: 50px; */
-  /* align-self: start; */
+  align-self: center;
+  /* justify-self: start; */
   grid-area: 2 / 1 / 3 / 5;
   text-align: center;
   /* grid-template-rows: repeat(5, 1fr); */
+  /* align-items: center; */
 }
 
 .name h1, h3 {
@@ -63,10 +105,11 @@
   font-weight: 400;
 }
 
-.nav a {
+#navbar a {
   text-decoration: none;
   /* color: #ae9d8f; */
   color: #f3e0da;
+  font-size: 25px;
 }
 
 h1 {
@@ -74,11 +117,13 @@ h1 {
 }
 
 .container2 {
-  display: grid;
-  padding: 0 0 0 20px;
+  /* display: grid; */
+  /* padding: 0 0 0 20px; */
   /* height: 475px; */
-  grid-template-columns: 1fr 1fr 1fr 50px 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-columns: repeat(2,8fr); */
+  /* grid-auto-rows: minmax(min-content, max-content); */
+  /* grid-template-rows: 1fr 1fr; */
+  /* grid-column-gap: 2em; */
 }
 
 #about-me-title {
@@ -93,29 +138,25 @@ h1 {
 .example-number {
   grid-area: 1/1/5/4;
   line-height: 1.5;
-  /* padding-right: 60px; */
 }
 
 #about-me-summary {
   margin: 0;
-  /* padding: 20px; */
   color: #f3e0da;
-  /* grid-column: 1/2; */
-  /* position:  relative; */
   font-family: 'Playfair Display', serif;
   font-size: 1.5vw;
 }
 
 .container2 h1 {
   color: #0f2640;
-  margin: 0 0 30px 0;
-  padding: 10px 20px 20px 10px;
   background-color: #f3e0da;
+  width: 100%;
+  margin: 0;
+  grid-area: 1/1/2/4;
 }
 
 .container2 img {
   grid-area: 1/5/4/7;
-  /* padding-bottom: 50px; */
 }
 
 .block {
@@ -126,168 +167,83 @@ h1 {
 }
 
 .about-pics {
-  grid-area: 1/5/4/7;
+  grid-area: 1/4/4/7;
 }
 
 .container3 {
   display: grid;
-  padding: 0 20px 20px 20px;
-  justify-items: center;
+  grid-template-rows: 170px 1fr;
   align-items: center;
   position: relative;
+  grid-column-gap: 3em;
 }
 
 .container3 h1 {
+  margin: 0;
   width: 100%;
   font-family: 'Playfair Display', serif;
   color: #0f2640;
   background-color: #f3e0da;
-  padding: 10px 20px;
+  padding: 10px 0;
   text-align: center;
 }
 
 .project {
-  width: 75%;
-  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 25px 0;
 }
 
-img {
-  width: 100%;
-}
+.project img {}
 
 .caption {
   text-align: center;
-  padding: 10px 20px;
 }
 
 @media only screen and (min-width: 768px) {
-
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(25, 21, 116);
-    font-weight: bold;
-    font-size: 5vw;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    /* background-color: rgba(255,255,255,0.9); */
+  .container3 {
   }
 
-  .prev {
-    right: 90%;
+  .container3 h1 {
+    grid-area: 1/1/2/4;
   }
 
-  /* Position the "next button" to the right */
-  .next {
-    left: 90%;
-    border-radius: 3px 0 0 3px;
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(25, 21, 116, 0.9);
-    color: white;
-  }
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {
-      opacity: .4
-    }
-
-    to {
-      opacity: 1
-    }
-  }
-
-  @keyframes fade {
-    from {
-      opacity: .4
-    }
-
-    to {
-      opacity: 1
-    }
-  }
+.icon {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 467px) {
-  .container2 {
-    padding: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-    height: 305px;
-    overflow: visible;
-    height: 400px;
-  }
-
-  .container h1, .container2 h1 {
-    padding: 10px;
-  }
-
-  .example-number {
-    grid-area: 1/1/2/3;
-    height: 150px;
-  }
-
-  #about-me-summary {
-    margin-bottom: 30px;
-  }
-
-  .about-pics {
-    grid-area: 2/1/4/3;
-    width: 100%;
-    /* height: 100%; */
-    margin-top: 50px;
-  }
-
-  .about-pics img {
-    width: 80%;
-  }
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.prev, .next {
+.dropdown-content {
   display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: 0;
 }
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: grid;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: inline-grid;
+}
+
+.fa-5x {
+  grid-row-start: 3;
+}
+
+.social {
+  grid-area: 3/1/4/4;
+  text-align: center;
 }
