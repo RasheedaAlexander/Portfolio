@@ -5,5 +5,5 @@ Here is a portfolio which will display all of my web development projects.
 
 # Stack
 + HTML
-+ GridCSS
-+ JavaScript
++ CSS
++ JavaScript/JQuery
