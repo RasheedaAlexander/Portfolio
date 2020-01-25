@@ -1,33 +1,19 @@
-$(document).ready(function () {
-  var trigger = $('.hamburger'),
-  overlay = $('.overlay'),
-  isClosed = false;
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  const navbar = document.getElementById("navbar");
+  const a = navbar.classList.toggle("show");
+}
 
-  //call the menu to open
-  trigger.click(function () {
-    hamburger_cross();
-  });
-
-
-  //If menu is clicked, change the class to open it
-  //If X(close) is clicked, close the menu
-  function hamburger_cross() {
-    if (isClosed == true) {
-      overlay.hide();
-      trigger.removeClass('is-open');
-      trigger.addClass('is-closed');
-      isClosed = false;
-    } else {
-      overlay.show();
-      trigger.removeClass('is-closed');
-      trigger.addClass('is-open');
-      isClosed = true;
-    }
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.fa-bars')) {
+    const dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      const openDropdown = dropdowns[i];
+      return openDropdown.classList.contains ('show') ?
+        openDropdown.classList.remove('show') : '';
+      }
   }
-
-  //add.remove the class toggled to the wrapper container when clicked
-  $('[data-toggle="offcanvas"]').click(function() {
-    $('#wrapper').toggleClass('toggled');
-  });
-
-});
+}
