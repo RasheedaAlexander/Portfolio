@@ -6,4 +6,4 @@ Here is a portfolio which will display all of my web development projects.
 # Stack
 + HTML
 + CSS
-+ JavaScript/JQuery
++ JavaScript/React/Angular
