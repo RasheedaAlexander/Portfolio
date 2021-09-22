@@ -1,0 +1,270 @@
+html {
+    font-size: 100%;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 1400px;
+    background-color: #ede0d4;
+    font-family: 'Space Mono', monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+header {
+    background-color: gray;
+    z-index: 10;
+    top: 0px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    line-height: 1rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+} 
+
+.logo,
+.nav-menu {
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    flex: 1 0 10%;
+    text-align: center;
+}
+
+.logo a,
+.nav-menu a {
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+    padding: 0.8rem;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.logo a {
+    color: #fff;
+}
+.navbar-item a {
+    color: #000;
+}
+
+.navbar-item a:hover {
+    background-color: #fff;
+}
+
+.navbar-item a:active {
+    transform: scale(0.9);
+}
+
+.container {
+    padding: 20px; 
+}
+
+.left, 
+.right {
+    width: 100%;
+    text-align: center;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 70%;
+}
+
+#projects-container {
+    padding: 2.25rem 1.25rem;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: -1rem; */
+    padding: 1rem;
+    /* text-align: center; */
+}
+
+.projects-link {
+    /* margin: -1rem; */
+    padding: 1rem; 
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+}
+
+.gallery-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    object-position: center;
+    object-fit: cover;
+}
+
+.project-about {
+    padding: 2.5rem 2rem;
+    /* z-index: 10; */
+    border-width: 4px;
+    background-color: #1a202c;
+    border-color: #2d3748;
+    opacity: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.gallery:hover .project-about {
+    opacity: 1;
+}
+
+.subtitle, .project-title {
+    top: 50%;
+    left: 50%;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.subtitle {
+    letter-spacing: 0.1em;
+    font-size: .875rem;
+    color: #68d391;
+}
+
+.project-title {
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+
+@media (min-width: 600px) {
+    .logo {
+        font-size: 1.5rem
+    }
+
+    header {
+        position: sticky;
+    }
+
+    .navbar {
+        margin-right: 0 auto 0 1rem;
+        border-left-width: 1px;
+        border-color: #4a5568;
+        line-height: 1.5rem;
+    }
+
+    .nav-menu {
+        width: 100%;
+    }
+
+    .nav-item {
+        flex: 1 0 10%;
+    }
+
+    .container {
+        display: flex;
+        padding: 2.25rem 1.25rem;
+    }
+
+    .left {
+        flex: 75%;
+        text-align: left;
+    }
+
+    .about-title {
+        font-size: 2.875rem;
+    }
+
+    .about-body {
+    align-items: center;
+    margin-top: 5.25rem;
+    font-size: large;
+    }
+
+    .right {
+        flex: 25%;
+    }
+
+    .headshot {
+        width: 90%;
+    }
+
+    .projects-link {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .gallery-img, .project-about {
+        height: 100vh;
+    }
+}
+
+/* larger screen */
+@media (min-width: 900px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin: 0 2rem 2rem 2rem;;
+    }
+
+    .nav-menu {
+        width: auto;
+    }
+
+    .logo {
+        margin: 0 0 0 0.3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #projects-container {
+        /* padding: 10rem; */
+    }
+}
