@@ -26,6 +26,13 @@ const Navbar = () => {
                              <li className="nav-item"><a href="#about">About</a></li>
                              <li className="nav-item"><a href="#projects">Projects</a></li>
                              <li className="nav-item"><a href="#contact">Contact</a></li>
+                             
+
+                             <a href="https://github.com/RasheedaAlexander"><button className="button"><i className="fa fa-github" aria-hidden="true"></i> Github</button></a>
+                             
+                             <a href="https://www.linkedin.com/in/rasheedaalexander/"><button className="button"><i className="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</button></a>
+                             
+                             
                              </ul>
 
              

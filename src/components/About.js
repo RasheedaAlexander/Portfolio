@@ -6,7 +6,7 @@ const About = () => {
         <section id="about">
           <div className="container">
             <div className="left">
-            <h1 className="about-title">Hello! I'm Rasheeda <br/> - a Front End Developer.</h1>
+            <h1 className="about-title">Hi! I'm Rasheeda <br/> - a Front End Developer.</h1>
             <p className="about-body">
             My main focus is to offer insightful ways to build a digital presence.
             And I enjoy leveraging my love of learning to help people show their value.
