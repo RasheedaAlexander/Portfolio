@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/RasheedaAlexander/rasheedaalexander.github.io/static/css/main.db48c14a.chunk.css",
-    "main.js": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/main.e35eee08.chunk.js",
-    "main.js.map": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/main.e35eee08.chunk.js.map",
-    "runtime-main.js": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/runtime-main.67ded02d.js",
-    "runtime-main.js.map": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/runtime-main.67ded02d.js.map",
-    "static/js/2.5c2535c8.chunk.js": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/2.5c2535c8.chunk.js",
-    "static/js/2.5c2535c8.chunk.js.map": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/2.5c2535c8.chunk.js.map",
-    "static/js/3.52d48008.chunk.js": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/3.52d48008.chunk.js",
-    "static/js/3.52d48008.chunk.js.map": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/3.52d48008.chunk.js.map",
-    "index.html": "/RasheedaAlexander/rasheedaalexander.github.io/index.html",
-    "static/css/main.db48c14a.chunk.css.map": "/RasheedaAlexander/rasheedaalexander.github.io/static/css/main.db48c14a.chunk.css.map",
-    "static/js/2.5c2535c8.chunk.js.LICENSE.txt": "/RasheedaAlexander/rasheedaalexander.github.io/static/js/2.5c2535c8.chunk.js.LICENSE.txt",
-    "static/media/laptopcartoon.8c2646ea.png": "/RasheedaAlexander/rasheedaalexander.github.io/static/media/laptopcartoon.8c2646ea.png"
+    "main.css": "/rasheedaalexander.github.io/static/css/main.d9dbb7a7.chunk.css",
+    "main.js": "/rasheedaalexander.github.io/static/js/main.7763e9c6.chunk.js",
+    "main.js.map": "/rasheedaalexander.github.io/static/js/main.7763e9c6.chunk.js.map",
+    "runtime-main.js": "/rasheedaalexander.github.io/static/js/runtime-main.b8783630.js",
+    "runtime-main.js.map": "/rasheedaalexander.github.io/static/js/runtime-main.b8783630.js.map",
+    "static/js/2.791cbfd1.chunk.js": "/rasheedaalexander.github.io/static/js/2.791cbfd1.chunk.js",
+    "static/js/2.791cbfd1.chunk.js.map": "/rasheedaalexander.github.io/static/js/2.791cbfd1.chunk.js.map",
+    "static/js/3.46b92073.chunk.js": "/rasheedaalexander.github.io/static/js/3.46b92073.chunk.js",
+    "static/js/3.46b92073.chunk.js.map": "/rasheedaalexander.github.io/static/js/3.46b92073.chunk.js.map",
+    "index.html": "/rasheedaalexander.github.io/index.html",
+    "static/css/main.d9dbb7a7.chunk.css.map": "/rasheedaalexander.github.io/static/css/main.d9dbb7a7.chunk.css.map",
+    "static/js/2.791cbfd1.chunk.js.LICENSE.txt": "/rasheedaalexander.github.io/static/js/2.791cbfd1.chunk.js.LICENSE.txt",
+    "static/media/laptopcartoon.8c2646ea.png": "/rasheedaalexander.github.io/static/media/laptopcartoon.8c2646ea.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.67ded02d.js",
-    "static/js/2.5c2535c8.chunk.js",
-    "static/css/main.db48c14a.chunk.css",
-    "static/js/main.e35eee08.chunk.js"
+    "static/js/runtime-main.b8783630.js",
+    "static/js/2.791cbfd1.chunk.js",
+    "static/css/main.d9dbb7a7.chunk.css",
+    "static/js/main.7763e9c6.chunk.js"
   ]
 }
