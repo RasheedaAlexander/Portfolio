@@ -28,7 +28,7 @@ export const projects = [
       subtitle: "JavaScript and CSS",
       description:
         "Track recording artists' social media progress",
-      image: "https://rasheedaalexander.github.io/img/SoundScale.gif",
+      image: "https://i.gyazo.com/6f6d7d6d2baba929cf4157aef623f1e5.gif",
       link: "https://github.com/lesragsdale/soundscale",
     },
   ];

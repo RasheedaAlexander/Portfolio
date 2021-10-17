@@ -46,10 +46,7 @@ header {
     top: 100px;
     height: 100%;
     list-style: none;
-    /* justify-content: space-evenly; */
     padding: 15px 5px;
-    /* margin: 0 auto; */
-    /* z-index: 10; */
     background-color: #000;
     text-align: center;
     text-decoration: none;
@@ -108,7 +105,6 @@ li.nav-item:active {
 }
 
 a.projects-link {
-    height: 250px;
     padding: 5px;
 }
 
@@ -217,7 +213,6 @@ footer {
 
     .nav-menu {
         margin: 0; 
-        /* left: 0;  */
         right: 0;
         width: 50%;
         height: auto;
@@ -282,6 +277,5 @@ footer {
 
 @media (min-width: 1024px) {
     #projects-container {
-        /* padding: 10rem; */
     }
 }
